@@ -3,7 +3,7 @@
 
 A Python implementation of quantum-secured key exchange using Qiskit, featuring:  
 - ✅ BB84 protocol simulation  
-- 🔍 Eavesdropping detection (25% error rate)  
+- 🔍 Eavesdropping detection (45% error rate)  
 - 📊 Qubit visualization on Bloch spheres  
 
 ## Usage  
