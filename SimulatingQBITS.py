@@ -87,7 +87,7 @@ def clear_screen():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def main():
-    print("⚛️ QUANTUM KEY DISTRIBUTION SIMULATOR")
+    print(" QUANTUM KEY DISTRIBUTION SIMULATOR")
     print(f"Generating {KEY_LENGTH}-bit key with BB84 protocol...\n")
 
     quantum_key, error_rate, alice_bits, bob_bits = generate_quantum_key()
