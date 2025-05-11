@@ -76,11 +76,11 @@ def visualize_qubit(bit, basis):
         # Plot and save
         fig = plot_bloch_vector(bloch_coords, title=f"Bit: {bit}, Basis: {basis}")
         fig.savefig("bloch_sphere.png", bbox_inches='tight')
-        print("✅ Bloch sphere saved as 'bloch_sphere.png'")
+        print(" Bloch sphere saved as 'bloch_sphere.png'")
         plt.close(fig)
         
     except Exception as e:
-        print(f"❌ Visualization error: {str(e)}")
+        print(f" Visualization error: {str(e)}")
 
 def clear_screen():
     """Clear terminal screen cross-platform"""
@@ -118,19 +118,19 @@ def main():
                 continue
 
             if user_input == quantum_key:
-                print("\n✅ ACCESS GRANTED!")
+                print("\n ACCESS GRANTED!")
                 print("Secret message: 'Schrödinger's cat is alive!'")
                 break
             else:
                 attempts -= 1
-                print("❌ Incorrect key!")
+                print(" Incorrect key!")
 
         except KeyboardInterrupt:
-            print("\n⚠️ Session cancelled")
+            print("\n Session cancelled")
             break
 
     if attempts == 0:
-        print("\n🔒 TOO MANY FAILED ATTEMPTS!")
+        print("\n TOO MANY FAILED ATTEMPTS!")
         if error_rate > 0.1:
             print("Warning: High error rate suggests eavesdropping!")
 
