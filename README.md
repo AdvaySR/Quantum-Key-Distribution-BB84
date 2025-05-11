@@ -1,4 +1,4 @@
-# Quantum Key Distribution (BB84) Simulator
+# 🔐 Quantum Key Distribution (BB84) Simulator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
@@ -9,10 +9,10 @@ Simulates quantum-secured key exchange with eavesdropping detection using Qiskit
 *(Diagram: BB84 key exchange process)*
 
 ## Features
-- **BB84 Protocol** implementation
-- **25% error rate** eavesdropping detection
-- **Bloch sphere visualization** of qubit states
-- **Interactive key verification**
+- 🎯 **BB84 Protocol** implementation
+- 🔍 **25% error rate** eavesdropping detection
+- 📊 **Bloch sphere visualization** of qubit states
+- ⚡ **Interactive key verification**
 
 ## Usage
 ```bash
