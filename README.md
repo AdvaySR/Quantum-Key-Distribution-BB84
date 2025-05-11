@@ -5,7 +5,6 @@
 
 Simulates quantum-secured key exchange with eavesdropping detection using Qiskit.
 
-![BB84 Protocol](assets/protocol.png)
 *(Diagram: BB84 key exchange process)*
 
 ```mermaid
