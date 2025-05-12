@@ -38,3 +38,9 @@ Key Features
 📊 Bloch sphere visualization (see below)
 ![Bloch Sphere](assets/bloch_sphere.png)
 ---
+Try It Yourself
+
+git clone https://github.com/yourusername/QKD-BB84-Simulator.git
+pip install -r requirements.txt
+python qkd_simulation.py
+---
