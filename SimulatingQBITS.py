@@ -5,7 +5,7 @@ from qiskit.visualization import plot_bloch_vector
 from qiskit.quantum_info import Statevector , Pauli
 import matplotlib.pyplot as plt
 
-# ===== CONFIG =====
+# CONFIG
 KEY_LENGTH = 16
 os.environ['QISKIT_NO_ACCELERATE'] = '1'
 
@@ -29,14 +29,14 @@ def generate_quantum_key():
         if alice_bits[i] == 1:
             qc.x(0)
 
-        # Eve intercepts
+        # eve intercepts
         if eve_bases[i] == '×':
             qc.h(0)
         qc.measure(0, 0)
         result = execute(qc, backend, shots=1).result()
         eve_bit = int(list(result.get_counts().keys())[0])
 
-        # Bob measures
+        # bob measures
         qc = QuantumCircuit(1, 1)
         if eve_bit:
             qc.x(0)
@@ -58,17 +58,17 @@ def generate_quantum_key():
 def visualize_qubit(bit, basis):
     """Visualize qubit state on Bloch sphere"""
     try:
-        # Create quantum state
+        # create quantum state
         qc = QuantumCircuit(1)
         if bit == 1:
             qc.x(0)
         if basis == '×':
             qc.h(0)
             
-        # Get statevector and convert to Bloch coordinates
+        # vet statevector and convert to Bloch coordinates
         state = Statevector.from_instruction(qc)
         bloch_coords = [
-            state.expectation_value(Pauli('X')).real,  # Now Pauli is defined
+            state.expectation_value(Pauli('X')).real, 
             state.expectation_value(Pauli('Y')).real,
             state.expectation_value(Pauli('Z')).real
         ]
@@ -95,7 +95,7 @@ def main():
     print(f"Generated Key: {quantum_key}")
     print(f"Estimated Eavesdropping Error Rate: {error_rate:.2%}")
 
-    # Visualize first qubit
+    # visualize first qubit
     print("\nVisualizing first qubit states:")
     visual_basis = np.random.choice(['+', '×'])
     print(f"Alice's bit 0: {alice_bits[0]} | Basis: {visual_basis}")
