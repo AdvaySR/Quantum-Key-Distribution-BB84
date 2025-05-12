@@ -5,7 +5,18 @@ date: 2023-11-15
 tags: [quantum-computing, qiskit, cryptography]
 ---
 
-![BB84 Protocol]({{ site.baseurl }}/assets/protocol.png)
+![BB84 Protocol]
+```mermaid
+flowchart TD
+    A[Alice] -->|1. Prepares Qubits| B((" "))
+    B -->|2. Sends| C[Bob]
+    D[Eve] -.->|3. May Intercept| B
+    C -->|4. Measures| E((" "))
+    E -->|5. Reveals Bases| F{Key Sifting}
+    F -->|6. Final Key| G[Shared Key]
+    style D fill:#f9d5d5,stroke:#ff3333
+    linkStyle 2 stroke:#ff3333,stroke-dasharray:3
+```
 
 ## Why Quantum Cryptography?
 - Traditional encryption (RSA) will be broken by quantum computers
@@ -18,6 +29,14 @@ def encode_qubit(bit, basis):
     qc = QuantumCircuit(1)
     if basis == '×': qc.h(0)
     if bit == 1: qc.x(0)
-    return qc 
+    return qc
+```
+---
+Key Features
+✅ Eavesdropping detection (25% error rate)
+
+📊 Bloch sphere visualization (see below)
+![Bloch Sphere]({{ site.baseurl }}/assets/bloch_sphere.png)
+---
 
 
