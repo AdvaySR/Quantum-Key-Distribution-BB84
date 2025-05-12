@@ -6,6 +6,7 @@ tags: [quantum-computing, qiskit, cryptography]
 ---
 
 ![BB84 Protocol]
+
 ![Bloch Sphere](/assets/protocol.png)
 
 
