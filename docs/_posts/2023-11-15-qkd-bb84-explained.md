@@ -36,7 +36,7 @@ Key Features
 ✅ Eavesdropping detection (25% error rate)
 
 📊 Bloch sphere visualization (see below)
-![Bloch Sphere](/QKD-BB84-Simulator/assets/bloch_sphere.png)
+![Bloch Sphere](/assets/bloch_sphere.png)
 
 ---
 Try It Yourself
