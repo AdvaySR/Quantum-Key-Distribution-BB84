@@ -7,17 +7,8 @@ Simulates quantum-secured key exchange with eavesdropping detection using Qiskit
 
 *(Diagram: BB84 key exchange process)*
 
-```mermaid
-flowchart TD
-    A[Alice] -->|1. Prepares Qubits| B((" "))
-    B -->|2. Sends| C[Bob]
-    D[Eve] -.->|3. May Intercept| B
-    C -->|4. Measures| E((" "))
-    E -->|5. Reveals Bases| F{Key Sifting}
-    F -->|6. Final Key| G[Shared Key]
-    style D fill:#f9d5d5,stroke:#ff3333
-    linkStyle 2 stroke:#ff3333,stroke-dasharray:3
-```
+![Bloch Sphere](/assets/protocol.png)
+
 
 ## Features
 - 🎯 **BB84 Protocol** implementation
