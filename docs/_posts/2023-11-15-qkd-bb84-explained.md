@@ -18,4 +18,11 @@ def encode_qubit(bit, basis):
     qc = QuantumCircuit(1)
     if basis == '×': qc.h(0)
     if bit == 1: qc.x(0)
-    return qc
+    return qc 
+
+
+Key Features
+✅ Eavesdropping detection (25% error rate)
+
+📊 Bloch sphere visualization (see below)
+![Bloch Sphere]({{ site.baseurl }}/assets/bloch_sphere.png)
