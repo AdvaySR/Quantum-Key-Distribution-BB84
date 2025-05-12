@@ -36,7 +36,5 @@ Key Features
 ✅ Eavesdropping detection (25% error rate)
 
 📊 Bloch sphere visualization (see below)
-![Bloch Sphere]({{ site.baseurl }}/assets/bloch_sphere.png)
+![Bloch Sphere](assets/bloch_sphere.png)
 ---
-
-
